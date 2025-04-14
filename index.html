@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Juego de Adivinanza</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-start p-6">
+<h1 class="text-3xl font-bold text-center text-blue-800 my-4">Adivina el Número</h1>
+<div class="bg-white shadow-lg rounded-xl p-6 w-full max-w-md text-center space-y-4">
+  <p>Ingresa un número entre 1 y 100:</p>
+  <input type="number" id="inputNumero" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+  <button id="verificarNumero" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg">
+    Adivinar
+  </button>
+  <p id="mensaje" class="text-lg font-medium text-gray-800 min-h-[1.5rem] transition-all duration-300 ease-in-out"></p>
+</div>
+<div class="mt-10 w-full max-w-md bg-gray-200 p-4 rounded-xl shadow-inner text-gray-700">
+  <h2 class="font-semibold mb-2">Estadísticas</h2>
+  <p id="estadisticas" class="whitespace-pre-line"></p>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
